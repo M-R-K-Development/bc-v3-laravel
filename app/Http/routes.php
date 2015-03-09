@@ -11,11 +11,16 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', function () {
+    Redirect::route('create');
+});
 
-Route::get('home', 'HomeController@index');
+// Route::get('home', 'HomeController@index');
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+// Route::controllers([
+// 	'auth' => 'Auth\AuthController',
+// 	'password' => 'Auth\PasswordController',
+// ]);
+//
+//
+Route::resource('/', '\App\Http\Controllers\SiteSettingsController');

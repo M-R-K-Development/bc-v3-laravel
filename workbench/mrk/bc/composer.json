@@ -1,0 +1,24 @@
+{
+    "name": "mrk/bc",
+    "description": "",
+    "authors": [
+        {
+            "name": "Matthew Knighton",
+            "email": "mrkdevelopment@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*",
+        "guzzlehttp/guzzle": "~5.2"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-4": {
+            "Mrk\\Bc\\": "src/Mrk/Bc"
+        }
+    },
+    "minimum-stability": "stable"
+}
